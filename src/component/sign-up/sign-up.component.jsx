@@ -22,7 +22,7 @@ class SignUp extends React.Component{
     render(){
         return(
             <div className="sign-up">
-                <h2 className="title">I Do not have account!  </h2>
+                <h2 className="title">I Do not habve account!  </h2>
                 <span>Sign up With you Email and Password</span>
                 <form className="sign-up-form">
 
