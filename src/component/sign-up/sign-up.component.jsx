@@ -1,10 +1,10 @@
-import React from React;
+import React from "react";
 
 import FormInput from "../form-input/form-input.component"
 
-import customButton from  "../custom-button/custom-button.component" 
+import CustomButton from  "../custom-button/custom-button.component" 
 
-import {auth, createUserProfileDocument, CreateUserProfileDocument} from "../../firebase/firebase.utils"
+import {auth, createUserProfileDocument} from "../../firebase/firebase.utils"
 import "./sign-up.styles.scss"
 
 class SignUp extends React.Component{
@@ -20,18 +20,18 @@ class SignUp extends React.Component{
     }
 
     handleSubmit = async event => {
-        event.preventDefault();
+        event.preventDefault()
 
 
         const {displayName, email, password,  confirmPassword} = this.state
 
-        if(password != confirmPassword){
+        if(password !== confirmPassword){
             alert("Passwords DOnot Match!")
-            return;
+            return
         }
         
         try{
-            const{ user} = await auth.createUserWithEmailAndPassword(email, password)
+            const{user} = await auth.createUserWithEmailAndPassword(email, password)
             await createUserProfileDocument(user, {displayName})
 
             this.setState({
@@ -42,7 +42,7 @@ class SignUp extends React.Component{
             }) 
         }
         catch(err){
-            console.log("The error is ", err);
+            console.log(err);
         }
         
     }
@@ -90,7 +90,7 @@ class SignUp extends React.Component{
                     />
 
                     <FormInput
-                    type="confirmPassword"
+                    type="password"
                     name="confirmPassword"
                     value={confirmPassword}
                     onChange={this.handleChange}
@@ -98,7 +98,7 @@ class SignUp extends React.Component{
                     required
                     />
 
-                <customButton type="submit">SIGN UP</customButton>
+                <CustomButton type="submit">SIGN UP</CustomButton>
 
                 </form>
             </div>
