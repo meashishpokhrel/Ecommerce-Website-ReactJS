@@ -1,0 +1,15 @@
+/*************************************NOTES*******************************/
+
+/****************June 8, 2021******************************/
+
+1. mapStatetoProps and Dispatch runs every time the react is reloaded.
+ All the available mapStatetoProps  in the apps runs whether neceesaary or not.
+Performance issue aaucha yesto huda kina bhane harek choti state re render huncha hamlai change nahune value bhaye pani naya object banaucha 
+pheri render huncha yesle garda Performance issue aaucha.
+Yesko solution bhaneko Momoization, using Reselect.
+
+yarn add reselect
+
+Memoized Selector ko barema lekh..THey are used to eliminated the re render problem. 
+
+It makes sure that our (cartdropdown component/ other component) is not getting re rendered, whenever the state changes that is unrelatable to cart items.
