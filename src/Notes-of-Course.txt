@@ -13,3 +13,8 @@ yarn add reselect
 Memoized Selector ko barema lekh..THey are used to eliminated the re render problem. 
 
 It makes sure that our (cartdropdown component/ other component) is not getting re rendered, whenever the state changes that is unrelatable to cart items.
+
+/****************June 9, 2021******************************/
+
+1. connect actualyy passes Dispatch into our components as a prop if we donot suppply second argument to connect.
+ so if we donot supply mapDispatchToProps as the second parameter connect  will pass Dispatch into our component as a property.  
