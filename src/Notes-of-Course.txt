@@ -18,3 +18,8 @@ It makes sure that our (cartdropdown component/ other component) is not getting 
 
 1. connect actualyy passes Dispatch into our components as a prop if we donot suppply second argument to connect.
  so if we donot supply mapDispatchToProps as the second parameter connect  will pass Dispatch into our component as a property.  
+
+ Local Storage 
+ Session Storage
+
+Redux react  or redux persist for the local Storage.
