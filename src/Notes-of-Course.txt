@@ -25,3 +25,4 @@ It makes sure that our (cartdropdown component/ other component) is not getting 
 Redux react  or redux persist for the local Storage.
 
 Saturaday 
+Revison pRoscedire carried out
