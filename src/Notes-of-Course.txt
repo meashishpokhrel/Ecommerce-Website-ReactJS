@@ -45,3 +45,7 @@ Local Storage has getitem and setitem. set allows to put in into the local stora
 window.localStorage.setItem('myitemkey', JSON.stringify(myObjecttoStore))
 
 It only stores string so we must convert to string.
+
+----Redux Persist-----
+
+yarn add redux-persist
