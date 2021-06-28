@@ -49,3 +49,9 @@ It only stores string so we must convert to string.
 ----Redux Persist-----
 
 yarn add redux-persist
+
+
+/****************June 28, 2021******************************/
+
+use of ownProps ????
+
