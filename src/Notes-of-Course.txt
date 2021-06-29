@@ -93,3 +93,13 @@ Data Normalisation:
     While working and writing the code, understand what is efficient, what the feature requires and work according to it.
     There is no particular rule for data flow but being a developer it is our duty always to make proper and efficient flow in the codes.
     Make smart decisions
+
+    :::STRIPE INTEGRATION ::::
+
+    yarn add react-stripe-checkout
+
+    use < StripeCheckout
+        />
+        and fill necessary attributes to display the payment box.
+        Available at https://github.com/azmenak/react-stripe-checkout
+        
