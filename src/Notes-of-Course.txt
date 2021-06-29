@@ -102,4 +102,11 @@ Data Normalisation:
         />
         and fill necessary attributes to display the payment box.
         Available at https://github.com/azmenak/react-stripe-checkout
-        
+
+
+      :::DEPLOYING TO HEROKU::::
+
+        1.install HEROKU
+        2. heroku login
+        3. heroku create ecommercereact01 --buildpack https://github.com/mars/create-react-app-buildpack.git
+        4. 
