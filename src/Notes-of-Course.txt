@@ -88,3 +88,8 @@ Data Normalisation:
          }
         }
 
+
+    ::::::THINKING ABOUT DATA FLOW:::::
+    While working and writing the code, understand what is efficient, what the feature requires and work according to it.
+    There is no particular rule for data flow but being a developer it is our duty always to make proper and efficient flow in the codes.
+    Make smart decisions
