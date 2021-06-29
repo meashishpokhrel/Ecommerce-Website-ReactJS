@@ -55,3 +55,36 @@ yarn add redux-persist
 
 use of ownProps ????
 
+/****************June 29, 2021******************************/
+
+Data Normalisation:
+    The conecpt of storing list of elements inside of an object instead of an array is called Data Normalisation.
+    Eg: Before we kept the collections in array and when using find it searched from left to right decresing the performance.
+
+    THis is actually the ideal way that we should be storing large arrays of elements where we need the individual element inside
+    of our reducer.
+
+    Store as obejcts instead as arrays
+    Eg: 
+     Before:
+     const SHOP_DATA =[
+         {
+             id:1,
+             ....
+         },
+         {
+             ....
+         }
+     ]
+
+     After:
+        const SHOP_DATA ={
+         hats:{
+             id:1,
+             ....
+         },
+         sneakers:{
+             ....
+         }
+        }
+
