@@ -131,3 +131,5 @@ Data Normalisation:
         Reference Document ---------> CRUD Operation
         documentRef -----> document Snapshots
         document snapshots -----------> .exists(), .data()
+
+        collectionRef--->collectionSnapShot --> [doc Snapshot] ---> { data }
