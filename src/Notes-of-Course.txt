@@ -114,3 +114,13 @@ Data Normalisation:
 
 /****************June 29, 2021******************************/
  CSS in JS syntax React 
+
+
+ /****************July 2, 2021******************************/
+
+ :::::::CSS in JS::::::::;;
+    we will use styled components.
+    CSS is written inside the JS
+    It makes the perfromance very fast.
+    It reduces the chance of styles leaking all over the place due to the CSS global name space that it occupies.
+    It advantage is we are able to encapsulate all of our css to just the component that is relevant. 
