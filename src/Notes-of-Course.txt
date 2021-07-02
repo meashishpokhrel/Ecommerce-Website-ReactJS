@@ -124,3 +124,10 @@ Data Normalisation:
     It makes the perfromance very fast.
     It reduces the chance of styles leaking all over the place due to the CSS global name space that it occupies.
     It advantage is we are able to encapsulate all of our css to just the component that is relevant. 
+
+    ::::::::Firebase REfresher:::::::
+        query will return two object: Reference  and Snapshots
+        Collection and Document type of these two obejcts
+        Reference Document ---------> CRUD Operation
+        documentRef -----> document Snapshots
+        document snapshots -----------> .exists(), .data()
