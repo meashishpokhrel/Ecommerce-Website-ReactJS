@@ -133,3 +133,10 @@ Data Normalisation:
         document snapshots -----------> .exists(), .data()
 
         collectionRef--->collectionSnapShot --> [doc Snapshot] ---> { data }
+
+
+        The collection is the most important part in my lide but there is still something that i would like to share with you. I THINKINGthat 
+        i am consumng a collection of the turme=uric that is also called besar so the fuck is thta there is nothgin but htere is something that is 
+        netihter arrested in the first place neither it is in the second place that the two attributes of the society are tangled with but
+        there are also conditions in which there is nothing that reminds of the great khali in the same montage as the time remembers me by the 
+        bame in which there has to be something that is truested upon by hte main socity,
