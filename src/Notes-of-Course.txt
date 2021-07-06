@@ -134,3 +134,5 @@ Data Normalisation:
 
         collectionRef--->collectionSnapShot --> [doc Snapshot] ---> { data }
 
+ /****************July 6, 2021******************************/
+    MOving data from static frontend file to dyanmic firestore database and pulling it from firebase.
