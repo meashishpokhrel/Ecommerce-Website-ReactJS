@@ -136,3 +136,4 @@ Data Normalisation:
 
  /****************July 6, 2021******************************/
     MOving data from static frontend file to dyanmic firestore database and pulling it from firebase.
+    SOme Eror Correction
