@@ -6,13 +6,22 @@ import CollectionOverview from "../../component/collection-overview/collection-o
 import CollectionPage from "../collection/collection.component";
 
 
-const ShopPage = ({match}) => (
-            <div className="shop-page">
-                <Route exact path={`${match.path}`} component={CollectionOverview}/>
-                <Route path={`${match.path}/:collectionId`} component={CollectionPage}/>
-                
-            </div> 
+class ShopPage extends React.Component {
+    unsubscribeFromSnapshot = null;
+
+    
+    render(){
+        const {match} = this.props
+    return(
+        <div className="shop-page">
+            <Route exact path={`${match.path}`} component={CollectionOverview}/>
+            <Route path={`${match.path}/:collectionId`} component={CollectionPage}/>
+            
+        </div> 
 )
+    }
+}
+
 
 
 export default ShopPage;
