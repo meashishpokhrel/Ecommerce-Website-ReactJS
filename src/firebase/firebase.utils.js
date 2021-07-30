@@ -55,6 +55,20 @@ export const createUserProfileDocument = async (userAuth, additionalData) => {
   }
   export const auth = firebase.auth();
   export const firestore = firebase.firestore();
+
+  export const convertCollecSnapToMap = (collections) => {
+    const transformedCollection = collections.docs.map( doc => {
+      const {title, items} = doc.data()
+
+      return {
+        routeName: encodeURI(title.toLowerCase()),
+        id: doc.id,
+        title,
+        items
+      }
+    })
+    console.log(transformedCollection);
+  }
   
   const provider = new firebase.auth.GoogleAuthProvider();
   provider.setCustomParameters({ prompt: 'select_account' });
