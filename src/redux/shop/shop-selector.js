@@ -10,12 +10,14 @@ export const selectShopCollections = createSelector(
 export const selectCollection = (collectionUrlParam) => 
     createSelector(
         [selectShopCollections],
-        collections => collections[collectionUrlParam]
+        collections => (collections ? collections[collectionUrlParam] : null)
 
     )
 export const selectCollectionForPreview = createSelector(
     [selectShopCollections],
-    collections => Object.keys(collections).map(key => collections[key])
+    collections => collections ? Object.keys(collections).map(key => collections[key])  : []
 )
+
+This is the Portion in Which there has to be somethig in the past theat there is simething that is related to something that reminds me of something in the past 
 
 
