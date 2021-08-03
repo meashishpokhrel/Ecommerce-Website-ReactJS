@@ -18,6 +18,5 @@ export const selectCollectionForPreview = createSelector(
     collections => collections ? Object.keys(collections).map(key => collections[key])  : []
 )
 
-This is the Portion in Which there has to be somethig in the past theat there is simething that is related to something that reminds me of something in the past 
 
 
