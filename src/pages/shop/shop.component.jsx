@@ -30,7 +30,7 @@ const CollectionPageWithSpinner = WithSpinner(CollectionPage)
     }
     render(){
         const {match} = this.props
-        const {loading} = this.state
+        const {loading} = this.state 
     return(
         <div className="shop-page">
             <Route exact path={`${match.path}`} 
@@ -49,3 +49,5 @@ const mapDispatchToProps = dispatch => ({
 
 
 export default connect (null,mapDispatchToProps)(ShopPage);
+
+Moving to Asynhroniys
