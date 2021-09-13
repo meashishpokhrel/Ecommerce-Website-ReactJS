@@ -22,7 +22,13 @@ const CollectionPageWithSpinner = WithSpinner(CollectionPage)
         const {updateCollection}= this.props
         const collectionRef = firestore.collection("collections")
         
-        collectionRef.onSnapshot(async snapshot => {
+
+        // using simple fetch promise
+        // fetch("https://firestore.googleapis.com/v1/projects/ecommerce-website-reactjs/databases/(default)/documents/collections")
+        // .then(res => res.json())
+        // .then (collections => console.log(collections))
+
+        collectionRef.get().then(snapshot => {
             const collectionMap = convertCollecSnapToMap(snapshot);
             updateCollection(collectionMap);
             this.setState({ loading: false })
