@@ -17,7 +17,7 @@ const StripeCheckoutButton = ({price}) => {
            }
 
        }).then(response=> {
-           alert("payment successful")
+           alert("Hurray Payment Successful")
        }).catch(err => {
            console.log("Payment Error" , JSON.parse(err));
            alert("PLease enter valid card")
