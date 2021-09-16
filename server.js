@@ -1,5 +1,5 @@
 const express = require("express")
-const cors = require ("cors")
+
 const bodyParser = require ("body-parser")
 const path = require ("path")
 
@@ -10,8 +10,8 @@ const app = express()
 const port = process.env.port || 5000
 
 app.use(bodyParser.json())
-app.use(bodyParser.urlencoded)({extended: true})
-app.use (cors)
+app.use(bodyParser.urlencoded({extended: true}))
+
 
 if (process.env.NODE_ENV === "production"){
     app.use(express.static(path.join(__dirname, "client/build")))
@@ -26,13 +26,13 @@ app.listen(port, err => {
     console.log("Listening on port"+ port);
 })
 
-app.post("/payment", (res,req) {
+app.post("/payment", (req,res) => {
     const body = {
         source: req.body.token.id,
         amount: req.body.amount,
         currency: "usd"
     }
-})
+
 
 stripe.charges.create(body, (strpErr, strpRes) => {
     if (strpErr){
@@ -41,4 +41,6 @@ stripe.charges.create(body, (strpErr, strpRes) => {
     else{
         res.status(200).send({success: strpRes})
     }
+})
+
 })
